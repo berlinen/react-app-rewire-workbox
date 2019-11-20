@@ -19,8 +19,11 @@ const Index: React.FC = () => {
        <header>
           <ul className="navbar">
             <li><a href="/index.html">Home</a></li>
+            {/* eslint-disable-next-line */}
             <li><a href="#">World</a></li>
+            {/* eslint-disable-next-line */}
             <li><a href="#">Tech</a></li>
+            {/* eslint-disable-next-line */}
             <li><a href="#">Contsact</a></li>
             <li className="profile-icon"><img src="/images/icon/icon.svg" alt="profile icon" /></li>
           </ul>
@@ -58,9 +61,13 @@ const Index: React.FC = () => {
       </article>
 
       <footer>
+        {/* eslint-disable-next-line */}
         <a href="#" className="footer-link">Twitter</a>
+        {/* eslint-disable-next-line */}
         <a href="#" className="footer-link">Facebook</a>
+        {/* eslint-disable-next-line */}
         <a href="#" className="footer-link">Google+</a>
+        {/* eslint-disable-next-line */}
         <a href="#" className="footer-link">Digg</a>
       </footer>
 
