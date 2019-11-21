@@ -24,6 +24,9 @@
   },
   "eslintConfig": {
     "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
     "rules": {
       "jsx-a11y/anchor-is-valid": [
         "error",
@@ -41,7 +44,9 @@
             "preferButton"
           ]
         }
-      ]
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
     }
   },
   "browserslist": {
@@ -57,6 +62,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^2.3.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react-app-rewired": "^2.1.5",
