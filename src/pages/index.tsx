@@ -27,7 +27,7 @@ const Index: React.FC = () => {
             <li><a href="#">Tech</a></li>
             {/* eslint-disable-next-line */}
             <li><a href="#">Contsact</a></li>
-            <li className="profile-icon"><img src="/images/icon/icon.svg" alt="profile icon" /></li>
+            <li className="profile-icon"><img id="butInstall" src="/images/install.svg" alt="profile icon" /></li>
           </ul>
       </header>
       <article>
