@@ -1,6 +1,9 @@
 /* eslint-disable no-undef */
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js');
 
+// eslint-disable-next-line no-restricted-globals
+workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
+
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
 } else {
