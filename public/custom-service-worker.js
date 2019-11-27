@@ -1,6 +1,18 @@
 /* eslint-disable no-undef */
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js');
 
+// 启用离线分析
+workbox.googleAnalytics.initialize({
+  parameterOverrides: {
+    cd1: 'offline',
+  },
+
+  hitFilter: (params) => {
+    const queueTimeInSeconds = Math.round(params.get('qt') / 1000);
+    params.set('cm1', queueTimeInSeconds);
+  },
+});
+
 // eslint-disable-next-line no-restricted-globals
 workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 
